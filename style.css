@@ -13,24 +13,26 @@ body {
     background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 
-/* .container {
-} */
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
 
 .title {
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
     line-height: 1.1;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 10px;
 }
 
 .input {
-    width: 145px;
-    height: 145px;
+    width: 40vw;
+    height: 40vw;
     border-radius: 49%;
-    margin-left: 80px;
-    box-shadow: 2px 2px 8px black;
+    /* margin-left: 80px; */
+    box-shadow: 3px 3px 8px rgba(41, 40, 40, 0.575) inset;
     font-family: 'Anton', sans-serif;
     font-size: 1rem;
     background-color: rgb(240, 229, 191);
@@ -49,40 +51,42 @@ body {
 }
 
 .game {
-    width: 40vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
-    margin-top: 50px;
-    justify-content: center;
+    /* margin-top: 50px; */
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 header {
     position: relative;
     border: 3px solid hsl(217, 16%, 45%);
-    width: 50vw;
     margin: 40px auto 60px auto;
     border-radius: 20px;
     padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 
 .cscr, .scr {
-    position: absolute;
-    top: 12px;
-    left: 40vw;
     background-color: white;
-    width: 9vw;
-    height: 16vh;
+    width: 15vw;
+    height: auto;
     text-align: center;
     border-radius: 9px;
     padding: 10px;
     font-family: 'Anton', sans-serif;
     color: rgba(26, 25, 25, 0.747);
+    font-size: .5rem;
+    margin-left: 2vw;
 }
 
-.cscr {
-    left: 30vw;
+.div {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .score {
@@ -91,7 +95,7 @@ header {
 }
 
 span {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: hsl(229, 25%, 31%);
     padding-bottom: 2px;
 }
@@ -113,52 +117,57 @@ span {
     display: none;
 }
 
+
+/* 
+  another page styling
+*/
+
+
 .choicecontainer {
-    position: relative;
-    width: 60vw;
+    width: 90vw;
     margin: 0 auto;
-    position: relative;
     font-family: 'Anton', sans-serif;
     color: white;
 }
 
-.houseselected {
-    position: absolute;
-    top: 0;
-    left: 45vw;
+.pick {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+
+ .select {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: .7rem;
+ }
 
 
 .userpicked, 
 .bosspicked {
-    width: 220px;
-    height: 220px;
+    width: 35vw;
+    height: 35vw;
     border-radius: 49%;
     margin-top: 30px;
     border: 20px solid rgb(73, 207, 32);
+    font-size: .5rem;
+    box-shadow: 3px 3px 7px rgba(48, 46, 46, 0.61) inset;
 }
 
-
-.bosspicked {
-    position: absolute;
-    top: 36px;
-    left: 45vw;
-}
-
-.userpicked {
-    position: absolute;
-    top: 36px;
-    left: -3vw;
-}
-
-.winner, .playagain {
-    position: absolute;
+.win {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 5vh;
 }
 
 .winner {
-    top: 25vh;
-    left: 26vw;
     font-size: 2rem;
+    text-align: center;
 }
 
 .playagain {
@@ -170,4 +179,46 @@ span {
     text-transform: uppercase;
     border: none;
     box-shadow: 2px 2px 8px rgba(22, 22, 22, 0.795);
+}
+
+
+@media only screen and (min-width: 700px) {
+    .container {
+        width: 70vw;
+    }
+
+    .game {
+        width: 40vw;
+    }
+
+    .input {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .cscr, .scr {
+        width: 10vw;
+    }
+
+    header {
+        width: 60vw;
+        justify-content: space-between;
+    }
+
+    .choicecontainer {
+        width: 50vw;
+        position: relative;
+    }
+
+    .userpicked, .bosspicked {
+       width: 18vw;
+       height: 18vw;
+   }
+
+   .select {
+       width: 40vw;
+   } 
+
+   
+
 }

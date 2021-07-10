@@ -11,13 +11,15 @@
     <div class="container">
         <header>
             <h1 class="title">ROCK <br>PAPER<br> SCISSORS</h1>
-            <div class="scr">
-                <p class="score">YOUR SCORE</p>
-                <span id="userscr">0</span>
-            </div>
-            <div class="cscr">
-                <p class="score">BOSS SCORE</p>
-                <span id="bossscr">0</span>
+            <div class="div">
+                <div class="scr">
+                    <p class="score">YOUR SCORE</p>
+                    <span id="userscr">0</span>
+                </div>
+                <div class="cscr">
+                    <p class="score">BOSS SCORE</p>
+                    <span id="bossscr">0</span>
+                </div>
             </div>
         </header>
         <div class="game">
@@ -26,12 +28,18 @@
             <button class="input three">Scissors</button>
         </div>
         <div class="choicecontainer hide">
-           <h2 class="youselected">You Selected</h2>
-           <h2 class="houseselected">The House Selected</h2>
-           <button class="userpicked"></button>
-           <button class="bosspicked"></button>
-           <h2 class="winner"></h2>
-           <button class="playagain">Play Again</button>
+            <div class="select">
+                <h2 class="youselected">You Selected</h2>
+                <h2 class="houseselected">The House Selected</h2>
+            </div>
+           <div class="pick">
+               <button class="userpicked"></button>
+               <button class="bosspicked"></button>
+           </div>
+           <div class="win">
+               <h2 class="winner"></h2>
+               <button class="playagain">Play Again</button>
+           </div>
     </div>
     </div>
     <script src="game.js"></script> 

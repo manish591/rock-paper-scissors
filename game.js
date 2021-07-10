@@ -36,8 +36,8 @@ function gameOn (e) {
     //showing selected choice of both user and computer
      userPicked.innerHTML = `${playerChoice}`
      bossPicked.innerHTML = `${machineChoice}`
-     userPicked.style.fontSize = '2rem'
-     bossPicked.style.fontSize = '2rem'
+     userPicked.style.fontSize = '1rem'
+     bossPicked.style.fontSize = '1rem'
 
 
      if (playerChoice === 'Rock') {

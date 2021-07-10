@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">ROCK <br>PAPER<br> SCISSORS</h1>
+            <div class="scr">
+                <p class="score">YOUR SCORE</p>
+                <span id="userscr">0</span>
+            </div>
+            <div class="cscr">
+                <p class="score">BOSS SCORE</p>
+                <span id="bossscr">0</span>
+            </div>
+        </header>
+        <div class="game">
+            <button class="input one">Rock</button>
+            <button class="input two">Paper</button>
+            <button class="input three">Scissors</button>
+        </div>
+        <div class="choicecontainer hide">
+           <h2 class="youselected">You Selected</h2>
+           <h2 class="houseselected">The House Selected</h2>
+           <button class="userpicked"></button>
+           <button class="bosspicked"></button>
+           <h2 class="winner"></h2>
+           <button class="playagain">Play Again</button>
+    </div>
+    </div>
+    <script src="game.js"></script> 
+</body>
+</html>
